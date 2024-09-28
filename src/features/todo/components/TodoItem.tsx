@@ -84,7 +84,10 @@ export default function TodoItem(props: TProps) {
           )}
         </button>
 
-        <PrimaryButton color='red' onClick={() => dispatch(removeTodo(id))}>
+        <PrimaryButton
+          color='bg-red-600 hover:bg-red-700'
+          onClick={() => dispatch(removeTodo(id))}
+        >
           <span className='sr-only'>Delete todo</span>
           <svg
             className='w-6 h-6 text-white'
@@ -105,7 +108,10 @@ export default function TodoItem(props: TProps) {
           </svg>
         </PrimaryButton>
 
-        <PrimaryButton color='green' onClick={handleEdit}>
+        <PrimaryButton
+          color='bg-green-600 hover:bg-green-700'
+          onClick={handleEdit}
+        >
           <span className='sr-only'>edit todo</span>
           <svg
             className='w-6 h-6 text-white'
